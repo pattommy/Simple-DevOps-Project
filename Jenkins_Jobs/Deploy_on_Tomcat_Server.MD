@@ -14,6 +14,12 @@
     - `Manage Jenkins` > `Jenkins Plugins` > `available` > `deploy to container`
  
 2. Jenkins should need access to the tomcat server to deploy build artifacts. setup credentials to enable this process. use credentials option on Jenkins home page.
+- setup credentials
+- credentials...>  jenkins...> Global credentials...>  add credentials
+   - Username: "deployer"
+   - Password: "deployer"
+   - Id: "deployer"
+   - Description: "user to deployer on tomcat vm"
 
 ### Steps to create "Deploy_on_Tomcat_Server" Jenkin job
  #### From Jenkins home page select "New Item"
